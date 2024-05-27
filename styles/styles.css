@@ -1,0 +1,58 @@
+body{
+    display: flex;
+
+    justify-content: center;
+    justify-items: center;
+    background-color: hsl(148, 38%, 91%);
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+
+}
+
+h1{
+    margin: 5%;
+    font-family: "Open", sans-serif;
+}
+
+form{
+    width: 100%;
+    margin: 5%;
+}
+
+.name-section{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+}
+
+.email input{
+    width: 80%;
+}
+
+.query-type{
+    display: flex;
+    flex-direction: row;
+}
+
+.query-label{
+    border-style: groove;
+    border-radius: 5px;
+    width: 40%;
+    margin-right:  5%;
+}
+

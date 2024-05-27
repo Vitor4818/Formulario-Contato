@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+<main>
+
+  <h1>Contact Us</h1>
+
+  <form action="">
+    
+    <section class="name-section">
+
+      <div class="name">
+        <label for="name">First Name</label>
+        <input type="text" name="name" id="name" required="This field is required">
+      </div>
+
+      <div class="name">
+        <label for="last-name">Last name</label>
+        <input type="text" name="last-name" id="last-name">    
+      </div>
+    </section>
+
+    <section class="email">
+      <label for="email">Email Addres</label>
+      <input type="text">
+    </section>
+    
+    <section class="query-type">
+    <div class="query-label">
+      <input type="radio" name="general-enquiry" id="general-enquiry">
+      <label name="general-enquiry" id="general-enquiry">General Enquiry</label>
+      
+    </div>
+      <div class="query-label">
+        <input type="radio" name="suport-request" id="suport-request">
+        <label name="general-enquiry" id="general-enquiry">Suport Request</label>
+        
+      </div>
+    </section>
+
+    <section class="message">
+      <label for="message">Message</label>
+      <input type="text" name="message" id="message">
+    </section>
+
+    <section>
+      <label for="checkbox"></label>
+      <input type="checkbox" name="checkbox" id="checkbox">
+    </section>
+
+    <button>Submit</button>
+
+  </form>
+</main>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
