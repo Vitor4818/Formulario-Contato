@@ -23,35 +23,37 @@
 
   <h1>Contact Us</h1>
 
-  <form action="">
+  <form action="" id="contactForm">
     
     <section class="name-section">
 
       <div class="name">
         <label for="name">First Name</label>
-        <input type="text" name="name" id="name" required="This field is required">
+        <input type="text" name="name" id="name">
+        <span  class="error" id="error"></span>   
       </div>
 
       <div class="name">
         <label for="last-name">Last name</label>
-        <input type="text" name="last-name" id="last-name"  required="This field is required">    
+        <input type="text" name="last-name" id="last-name"> 
+        <span class="error" id="error"></span>
       </div>
     </section>
 
     <section class="email">
       <label for="email">Email Addres</label>
-      <input type="text" required="This field is required">
+      <input type="text" id="email" name="email">
     </section>
     
     <span>Query Type</span>
     <section class="query-type">
     <div class="query-label">
-      <input type="radio" name="general-enquiry" id="general-enquiry" required="This field is required">
+      <input type="radio" name="general-enquiry" id="general-enquiry" >
       <label name="general-enquiry" id="general-enquiry">General Enquiry</label>
       
     </div>
       <div class="query-label">
-        <input type="radio" name="suport-request" id="suport-request" required="This field is required">
+        <input type="radio" name="suport-request" id="suport-request">
         <label name="general-enquiry" id="general-enquiry">Suport Request</label>
         
       </div>
@@ -59,21 +61,24 @@
 
     <section class="message">
       <label for="message">Message</label>
-      <textarea name="message" id="message" required="This field is required"></textarea>
+      <textarea name="message" id="message"></textarea>
     </section>
 
     <section class="checkbox">
-      <input type="checkbox" name="checkbox" id="checkbox" required="This field is required">
+      <input type="checkbox" name="checkbox" id="checkbox">
       <label for="checkbox">I consent to being contacted by the team *</label>
     </section>
 
-    <button>Submit</button>
+    <button type="submit">Submit</button>
 
   </form>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Vitor4818">Vitor Martins</a>.
   </div>
+
+
+  <script type="text/javascript" src="js/script.js"></script>
 </main>
 
 
