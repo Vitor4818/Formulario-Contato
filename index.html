@@ -41,27 +41,39 @@
     </section>
 
     <section class="email">
-      <label for="email">Email Addres</label>
-      <input type="text" id="email" name="email">
+      <div class="email-content">
+        <label for="email">Email Addres</label>
+        <input type="text" id="email" name="email">
+      </div>
+      <span class="error" id="email-error"></span>
     </section>
     
+
+
+
     <span>Query Type</span>
     <section class="query-type">
     <div class="query-label">
-      <input type="radio" name="general-enquiry" id="general-enquiry" >
+      <input type="radio" name="queryInput" class="queryInput" value="general-enquiry">
       <label name="general-enquiry" id="general-enquiry">General Enquiry</label>
       
     </div>
+
       <div class="query-label">
-        <input type="radio" name="suport-request" id="suport-request">
+        <input type="radio" name="queryInput" class="queryInput" value="suport-request">
         <label name="general-enquiry" id="general-enquiry">Suport Request</label>
-        
       </div>
     </section>
+    <span class="error" id="queryError"></span>
+
+
 
     <section class="message">
-      <label for="message">Message</label>
-      <textarea name="message" id="message"></textarea>
+      <div class="textarea-content">
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+      </div>
+      <span class="error" id="textareaError"></span>
     </section>
 
     <section class="checkbox">
