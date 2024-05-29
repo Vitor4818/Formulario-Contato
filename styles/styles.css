@@ -1,8 +1,10 @@
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 98vw; /* Define a largura total da janela do navegador */
+    height: 95vh; /* Define a altura total da janela do navegador */
     background-color: hsl(148, 38%, 91%);
     font-family: "Karla", sans-serif;
 }
@@ -19,7 +21,7 @@ body{
 
     .error { 
     font-weight: bold;
-    color: red; 
+    color: hsl(0, 66%, 54%); 
     font-size: 1rem;
  }
 
@@ -31,6 +33,7 @@ main{
 }
 h1{
     margin: 5% 0% 0% 8%;
+    color: hsl(187, 24%, 22%);
 }
 
 form{
@@ -59,18 +62,24 @@ form{
 .name input{
     height: 2rem;
     border-radius: 5px;
+    border-color: hsl(169, 82%, 27%);
+}
+
+.email-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 2.5% 0% 2.5%;
 }
 
 .email{
-    display: flex;
-    flex-direction: column;
-    margin: 2.5%;
+    margin-bottom: 2%;
 }
 
 .email input{
     border-radius: 5px;
     height: 2rem;
     width: 83.8%;
+    border-color: hsl(169, 82%, 27%);
 }
 
 .query-type{
@@ -85,16 +94,19 @@ form{
     margin-right:  5%;
 }
 
-.message{
+.textarea-content{
     display: flex;
     flex-direction: column;
-    margin: 2.5%;
+    margin: 2.5% 2.5% 0% 2.5%;
 }
 
 .message textarea{
     border-radius: 10px;
     width: 84%;
     height: 5rem;
+    resize: none;
+    border-color: hsl(169, 82%, 27%);
+    border-width: 2px;
 }
 
 .message label{
@@ -104,7 +116,8 @@ form{
 .query-type{
         display: flex;
         flex-direction: row;
-        margin:0% 0% 0% 2.5%;
+        margin:1px 0% 0% 2.5%;
+ 
 }
 
 .query-label{
@@ -113,6 +126,8 @@ form{
     align-items: center;
     height: 2rem;
     border-radius: 10px;
+    border-width: 2px;
+    border-color: hsl(169, 82%, 27%);
 }
 span{
     margin: 0% 2.5% 0% 2.5%;
