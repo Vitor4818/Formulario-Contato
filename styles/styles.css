@@ -5,8 +5,24 @@ body{
     align-content: center;
     background-color: hsl(148, 38%, 91%);
     font-family: "Karla", sans-serif;
-
 }
+
+
+.attribution{
+     font-size: 11px; text-align: center; 
+    }
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+     }
+
+
+    .error { 
+    font-weight: bold;
+    color: red; 
+    font-size: 1rem;
+ }
+
 main{
     background-color: white;
     border-radius: 10px;
