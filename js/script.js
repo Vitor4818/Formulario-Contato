@@ -1,23 +1,26 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    // Previne o envio do formulário
-    event.preventDefault();
-
-    // Validação do campo "First Name"
+    const form = document.getElementById('contactForm');
     const firstNameInput = document.getElementById('name');
-    const lastMameInput = document.getElementById('last-name')
-    const firstNameError = document.getElementById('error');
-
-
-    if (firstNameInput.value.trim() === '' && lastMame.value.trim()=== '') {
-        firstNameError.textContent = 'First Name is required';
-    } else {
-        firstNameError.textContent = '';
-        alert('Formulário enviado com sucesso!');
-        // Aqui você pode adicionar a lógica para enviar o formulário, por exemplo:
-        // document.getElementById('contactForm').submit();
-    }
+    const lastNameInput = document.getElementById('last-name')
+    const firstNameError = document.getElementById('error-name')
+    const lastNameError = document.getElementById('error-last-name')
     
-});
+
+    
+    function validar(event){
+        event.preventDefault()
+        if (firstNameInput.value.trim() === '') {
+            firstNameError.textContent = 'First Name is required';
+    }else{
+        firstNameError.textContent = ""
+    }
+        if (lastNameInput.value.trim() === '') {
+            lastNameError.textContent = 'Last Name is required';
+        }else{
+            lastNameError.textContent = ""
+        }
+    } 
+
+    form.addEventListener('submit', validar)
 
 
 
