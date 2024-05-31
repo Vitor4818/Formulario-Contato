@@ -9,6 +9,10 @@
     const queryError = document.getElementById('queryError')
     const messageInput = document.getElementById('message')
     const messageError = document.getElementById('textareaError')
+    // Dentro da função validar(), após verificar que todos os campos estão preenchidos corretamente e antes de chamar form.submit()
+// Exibir a mensagem de envio bem-sucedido
+
+
     
 
     
@@ -64,10 +68,22 @@
     }
 
 
+    if(isValid){
+        console.log("Fomulario enviado corretamente!")
+        document.getElementById('mensagem-enviada').style.display = 'flex';
+        form.reset()
+        
+        
+
+    }else{
+        console.log("Preencha todos os campos para prosseguir")
+    }
     } 
 
     form.addEventListener('submit', validar)
 
 
+
+    
 
 
