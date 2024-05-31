@@ -1,10 +1,19 @@
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 body{
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     width: 98vw; /* Define a largura total da janela do navegador */
-    height: 95vh; /* Define a altura total da janela do navegador */
+    height: 98vh; /* Define a altura total da janela do navegador */
     background-color: hsl(148, 38%, 91%);
     font-family: "Karla", sans-serif;
 }
@@ -25,6 +34,29 @@ body{
     font-size: 1rem;
  }
 
+.message-tittle{
+    display: flex;
+    width: 38%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#mensagem-enviada{
+    animation: fade-in 0.5s ease-in-out forwards;
+    display: none;
+    margin-top: -10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: hsl(185,24%,22%);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    font-family: "Karla", sans-serif;
+    height: 5rem;
+}
+
+
 main{
     background-color: white;
     border-radius: 10px;
@@ -37,7 +69,7 @@ h1{
 }
 
 form{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
@@ -146,5 +178,10 @@ button{
     font-family: "Karla", sans-serif;
     color: white;
     font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(171,83%,14%);
+
 }
 
